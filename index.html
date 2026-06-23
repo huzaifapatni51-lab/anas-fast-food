@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ANAS FAST FOOD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+  <img src="images/logo.png" alt="ANAS FAST FOOD Logo">
+</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#deals">Deal's</a>
+      <a href="#payment">Payment Method</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+
+    <a class="order-btn" href="#order">Order Now</a>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Karachi's Favourite Fast Food</h1>
+
+<p>🍔 Burgers • 🌯 Shawarma • 🥪 Sandwiches • 🍕 Pizza</p>
+
+<p>📍 Patel Para Karachi | 🚀 Fast Delivery Available</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn yellow">View Menu</a>
+        <a href="https://wa.me/923259319533" target="_blank" class="btn red">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+<section class="section" id="menu">
+  <h2 class="title">Our Menu</h2>
+
+  <div class="filters">
+    <button class="active" onclick="filterMenu('all')">All</button>
+    <button onclick="filterMenu('zingerburger')">Zinger Burgers</button>
+    <button onclick="filterMenu('chickenburger')">Chicken Burgers</button>
+    <button onclick="filterMenu('beefburger')">Beef Burgers</button>
+    <button onclick="filterMenu('zingerroll')">Zinger Rolls</button>
+    <button onclick="filterMenu('shawarmaroll')">Shawarma Rolls</button>
+    <button onclick="filterMenu('chestbroast')">Chest Broast</button>
+    <button onclick="filterMenu('legbroast')">Leg Broast</button>
+    <button onclick="filterMenu('clubsandwich')">Club Sandwiches</button>
+    <button onclick="filterMenu('chickensandwich')">Chicken Sandwiches</button>
+    <button onclick="filterMenu('beverage')">Beverages</button>
+    <button onclick="filterMenu('pizza')">Pizza</button>
+  </div>
+
+  <div class="menu-grid" id="menuGrid"></div>
+<section class="section deals" id="deals">
+  <h2 class="title">Best Saver Deals</h2>
+
+  <div class="deals-grid">
+    <div class="card"><div class="card-content"><h3>Deal 01</h3><p>1 Zinger Burger + 1 Zinger Shawarma</p><div class="price">Rs. 440/-</div></div></div>
+    <div class="card"><div class="card-content"><h3>Deal 02</h3><p>1 Zinger Burger + 1 Club Sandwich + 1 Lahori Shawarma</p><div class="price">Rs. 740/-</div></div></div>
+    <div class="card"><div class="card-content"><h3>Deal 03</h3><p>1 Zinger Burger + 1 Leg Broast + 1 Lahori Shawarma</p><div class="price">Rs. 830/-</div></div></div>
+    <div class="card"><div class="card-content"><h3>Deal 04</h3><p>1 Zinger Burger + 1 Crispy Club Sandwich + 1 Lahori Shawarma</p><div class="price">Rs. 770/-</div></div></div>
+    <div class="card"><div class="card-content"><h3>Deal 05</h3><p>4 Zinger Burgers</p><div class="price">Rs. 1,150/-</div></div></div>
+    <div class="card"><div class="card-content"><h3>Deal 06</h3><p>2 Zinger Burgers + 2 Zinger Shawarma</p><div class="price">Rs. 899/-</div></div></div>
+    <div class="card"><div class="card-content"><h3>Deal 07</h3><p>2 Zinger Burgers + 2 Leg Broast</p><div class="price">Rs. 1,270/-</div></div></div>
+    <div class="card"><div class="card-content"><h3>Deal 08</h3><p>2 Club Sandwich + 2 Zinger Burger</p><div class="price">Rs. 1,150/-</div></div></div>
+    <div class="card"><div class="card-content"><h3>Deal 09</h3><p>1 Beef Burger + 1 Chicken Burger + 1 Zinger Burger</p><div class="price">Rs. 699/-</div></div></div>
+    <div class="card"><div class="card-content"><h3>Deal 10</h3><p>2 Zinger Burgers + 2 Zinger Shawarma + 2 Arabian Shawarma</p><div class="price">Rs. 1,099/-</div></div></div>
+    <div class="card"><div class="card-content"><h3>Deal 11</h3><p>1 Zinger Burger + 1 Arabian Shawarma</p><div class="price">Rs. 399/-</div></div></div>
+    <div class="card"><div class="card-content"><h3>Deal 12</h3><p>2 Lahori Shawarma + 2 Zinger Shawarma + 2 Arabian Shawarma</p><div class="price">Rs. 899/-</div></div></div>
+    <div class="card"><div class="card-content"><h3>Deal 13</h3><p>2 Zinger Burger + 1 Lahori Shawarma</p><div class="price">Rs. 699/-</div></div></div>
+
+    <div class="card mega-deal">
+      <div class="card-content">
+        <h3>Mega Deal</h3>
+        <p>2 Zinger Burger + 2 Club Sandwich + 2 Leg Broast + 3 Lahori Shawarma + 1 Chicken Burger + 1 Beef Burger</p>
+        <div class="price">Rs. 2,699/-</div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="section payment" id="payment">
+    <h2 class="title">Payment Method</h2>
+    <div class="payment-box">
+      <div>
+        <h3>Available Payment Methods</h3>
+        <p>Cash on Delivery</p>
+        <p>Easypaisa / JazzCash / Bank Transfer</p>
+        <p>Online payment ke baad screenshot WhatsApp par send kar dein.</p>
+      </div>
+<div class="qr-box">
+  <div style="text-align:left; line-height:2;">
+
+    <h3 style="color:#ffcc00;">📱 JazzCash</h3>
+    <p><strong>Account Title:</strong> MUHAMMAD HUZAIFA</p>
+    <p><strong>Account Number:</strong> 0325-9319533</p>
+
+    <h3 style="color:#ffcc00;">💳 Easypaisa</h3>
+    <p><strong>Account Title:</strong> MUHAMMAD HUZAIFA</p>
+    <p><strong>Account Number:</strong> 0370-9148642</p>
+
+    <h3 style="color:#ffcc00;">🏦 Meezan Bank</h3>
+    <p><strong>Account Title:</strong> MUHAMMAD HUZAIFA</p>
+    <p><strong>Account Number:</strong> 0149-0110655020</p>
+
+  </div>
+</div>
+  </section>
+
+  <section class="section order-section" id="order">
+    <h2 class="title">Place Your Order</h2>
+
+    <form class="order-form" onsubmit="sendFullOrder(event)">
+      <input type="text" id="customerName" placeholder="Customer Name" required>
+      <input type="tel" id="customerPhone" placeholder="Phone / WhatsApp Number" required>
+      <textarea id="customerAddress" placeholder="Delivery Address" required></textarea>
+
+      <select id="orderItem" required>
+        <option value="">Select Item</option>
+      </select>
+
+      <input type="number" id="orderQty" value="1" min="1" required>
+<button type="button" onclick="addToCart()">Add Item to Cart</button>
+
+<div id="cartBox" style="background:#151515; padding:15px; border-radius:10px;">
+<h3>🛒 Your Order Summary</h3>
+  <div id="cartItems">No items added yet.</div>
+  <h3 id="cartTotal">Subtotal: Rs. 0</h3>
+</div>
+      <select id="paymentMethod" required>
+        <option value="Cash On Delivery">Cash On Delivery</option>
+        <option value="Online Payment">Online Payment</option>
+      </select>
+
+    
+      <select id="deliveryMethod">
+        <option value="Delivery (+ Rs.200)">Delivery (+ Rs.200)</option>
+      </select>
+
+      <select id="extraFries">
+        <option value="No">Extra Fries: No</option>
+        <option value="Yes (+ Rs.100)">Extra Fries: Yes (+ Rs.100)</option>
+      </select>
+
+      <select id="extraSauce">
+        <option value="None">Extra Sauce: None</option>
+        <option value="Garlic Sauce (+ Rs.50)">Garlic Sauce (+ Rs.50)</option>
+        <option value="Mayo Sauce (+ Rs.50)">Mayo Sauce (+ Rs.50)</option>
+        <option value="Chipotle Sauce (+ Rs.50)">Chipotle Sauce (+ Rs.50)</option>
+        <option value="Ketchup">Ketchup</option>
+      </select>
+
+ 
+
+      <textarea id="orderNotes" placeholder="Notes / Without Mayo / Extra Cheese etc."></textarea>
+
+      <button type="submit">Send Order on WhatsApp</button>
+    </form>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2 class="title">Contact Us</h2>
+    <p><b>Phone/WhatsApp:</b> 0325-9319533</p>
+    <p><b>Address:</b> V2PP+57V, Darban Bazar St, Patel Para Karachi, Pakistan</p>
+    <p><b>Timings:</b> 5 PM to 4 AM</p>
+    <a class="btn yellow" target="_blank" href="https://maps.google.com/?q=V2PP+57V Darban Bazar St Patel Para Karachi Pakistan">Open Location</a>
+  </section>
+
+  <a class="float-whatsapp" target="_blank" href="https://wa.me/923259319533">WhatsApp</a>
+<footer class="footer">
+  <div class="footer-content">
+
+    <h2>ANAS FAST FOOD</h2>
+
+    <p>🍔 Fresh • Crispy • Delicious</p>
+
+    <p>📍 Patel Para Karachi</p>
+
+    <p>📞 0325-9319533</p>
+
+    <p>🕒 Open Daily: 5 PM - 4 AM</p>
+
+    <a href="https://wa.me/923259319533" target="_blank">
+      WhatsApp Order
+    </a>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 ANAS FAST FOOD | All Rights Reserved
+  </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
