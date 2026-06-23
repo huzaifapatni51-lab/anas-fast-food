@@ -284,9 +284,10 @@ nav a:hover{
 }
 
 @media(max-width:768px){
-  .navbar{
-    min-height:80px;
-  }
+.navbar{
+  min-height:80px;
+  position:relative;
+}
 
   .logo img{
     height:65px;
@@ -306,14 +307,21 @@ nav a:hover{
 
 nav{
   display:none;
-  flex-direction:column;
-  width:100%;
+  position:absolute;
+  top:95px;
+  left:50%;
+  transform:translateX(-50%);
+  width:230px;
   background:#111;
-  padding:10px;
+  padding:15px;
+  border-radius:15px;
+  z-index:9999;
+  box-shadow:0 0 25px rgba(0,0,0,0.8);
 }
 
 nav.show{
   display:flex;
+  flex-direction:column;
 }
 
   .hero{
