@@ -285,13 +285,18 @@ nav a:hover{
 
 @media(max-width:768px){
 .navbar{
-  min-height:80px;
-  position:relative;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  min-height:90px;
+  z-index:99999;
+  padding:10px 5%;
 }
 
-  .logo img{
-    height:65px;
-  }
+.logo img{
+  height:60px;
+}
 
 .menu-toggle{
   display:flex;
@@ -310,6 +315,7 @@ nav a:hover{
   padding:0;
   margin:0;
 }
+
 
 nav{
   display:none;
