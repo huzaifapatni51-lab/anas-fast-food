@@ -294,15 +294,21 @@ nav a:hover{
   }
 
 .menu-toggle{
-  display:block;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:62px;
+  height:62px;
+  border-radius:50%;
   background:#ffcc00;
-  color:black;
-  border:none;
-  padding:12px 20px;
-  border-radius:10px;
-  font-weight:bold;
-  margin:10px auto;
+  color:#008f5a;
+  border:6px solid white;
+  font-size:28px;
+  font-weight:900;
   cursor:pointer;
+  box-shadow:0 0 18px rgba(255,204,0,0.7);
+  padding:0;
+  margin:0;
 }
 
 nav{
