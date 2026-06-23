@@ -32,11 +32,15 @@ body{
 
 nav{
   display:flex;
-  gap:12px;
-  background:#111;
-  padding:8px;
-  border-radius:40px;
-  border:1px solid #222;
+  position:absolute;
+  top:100px;
+  left:0;
+  width:100%;
+  justify-content:center;
+  gap:8px;
+  overflow-x:auto;
+  padding:10px;
+  border-radius:0;
 }
 
 nav a{
