@@ -292,9 +292,29 @@ nav a:hover{
     height:65px;
   }
 
-  nav{
-    display:none;
-  }
+.menu-toggle{
+  display:block;
+  background:#ffcc00;
+  color:black;
+  border:none;
+  padding:12px 20px;
+  border-radius:10px;
+  font-weight:bold;
+  margin:10px auto;
+  cursor:pointer;
+}
+
+nav{
+  display:none;
+  flex-direction:column;
+  width:100%;
+  background:#111;
+  padding:10px;
+}
+
+nav.show{
+  display:flex;
+}
 
   .hero{
     height:82vh;

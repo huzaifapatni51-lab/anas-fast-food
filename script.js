@@ -299,3 +299,6 @@ _Order processed via Website. Please confirm my order promptly. JazakAllah!_`;
   displayMenu(menuItems);
 
 })();
+function toggleMenu(){
+  document.querySelector("nav").classList.toggle("show");
+}
