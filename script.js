@@ -302,3 +302,9 @@ _Order processed via Website. Please confirm my order promptly. JazakAllah!_`;
 function toggleMenu(){
   document.querySelector("nav").classList.toggle("show");
 }
+
+document.querySelectorAll("nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.querySelector("nav").classList.remove("show");
+  });
+});
